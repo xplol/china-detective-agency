@@ -54,12 +54,18 @@ export default function Navigation() {
                 </span>
               </Link>
             ))}
-            <Button
-              variant="default"
-              className="bg-amber text-background hover:bg-amber/90 font-medium"
+            <a
+              href="https://t.me/chinadetective8848_bot"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Free Consultation
-            </Button>
+              <Button
+                variant="default"
+                className="bg-amber text-background hover:bg-amber/90 font-medium"
+              >
+                Free Consultation
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -90,12 +96,19 @@ export default function Navigation() {
                   </span>
                 </Link>
               ))}
-              <Button
-                variant="default"
-                className="bg-amber text-background hover:bg-amber/90 font-medium w-full"
+              <a
+                href="https://t.me/chinadetective8848_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
               >
-                Free Consultation
-              </Button>
+                <Button
+                  variant="default"
+                  className="bg-amber text-background hover:bg-amber/90 font-medium w-full"
+                >
+                  Free Consultation
+                </Button>
+              </a>
             </div>
           </div>
         )}

@@ -126,13 +126,19 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+                <a
+                  href="https://t.me/chinadetective8848_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Free Consultation
-                  <ArrowRight className="ml-2" size={20} />
-                </Button>
+                  <Button
+                    size="lg"
+                    className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+                  >
+                    Free Consultation
+                    <ArrowRight className="ml-2" size={20} />
+                  </Button>
+                </a>
                 <Button
                   size="lg"
                   variant="outline"
@@ -316,13 +322,19 @@ export default function Home() {
               Contact us today for a free, confidential consultation. Our experienced investigators are ready to help you uncover the truth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+              <a
+                href="https://t.me/chinadetective8848_bot"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Free Consultation
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+                >
+                  Free Consultation
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </a>
               <Button
                 size="lg"
                 variant="outline"

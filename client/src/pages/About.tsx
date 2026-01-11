@@ -290,13 +290,19 @@ export default function About() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Contact us today for a free, confidential consultation. Let us help you uncover the truth.
             </p>
-            <Button
-              size="lg"
-              className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+            <a
+              href="https://t.me/chinadetective8848_bot"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Free Consultation
-              <ArrowRight className="ml-2" size={20} />
-            </Button>
+              <Button
+                size="lg"
+                className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+              >
+                Free Consultation
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+            </a>
           </div>
         </div>
       </section>

@@ -297,13 +297,19 @@ export default function Services() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Every case is unique. Contact us to discuss your specific investigation needs and receive a customized solution.
             </p>
-            <Button
-              size="lg"
-              className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+            <a
+              href="https://t.me/chinadetective8848_bot"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Free Consultation
-              <ArrowRight className="ml-2" size={20} />
-            </Button>
+              <Button
+                size="lg"
+                className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
+              >
+                Free Consultation
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
