@@ -32,12 +32,12 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+86 138 0000 0000", "Available 24/7"],
+      details: ["+86 153 9761 5812", "Available 24/7"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["contact@chinadetective.com", "Response within 24 hours"],
+      details: ["chinadetective8848@gmail.com", "Response within 24 hours"],
     },
     {
       icon: MapPin,
@@ -274,7 +274,7 @@ export default function Contact() {
                         <span className="font-medium">WeChat:</span> ChinaDetective
                       </p>
                       <p className="text-sm text-foreground">
-                        <span className="font-medium">WhatsApp:</span> +86 138 0000 0000
+                        <span className="font-medium">WhatsApp:</span> +86 153 9761 5812
                       </p>
                     </div>
                   </div>
