@@ -1,0 +1,10 @@
+{
+  "build": {
+    "command": "pnpm build",
+    "cwd": "/",
+    "root": "dist/public"
+  },
+  "env": {
+    "NODE_VERSION": "22.16.0"
+  }
+}
