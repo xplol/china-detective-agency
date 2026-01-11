@@ -103,42 +103,41 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-display text-lg font-bold text-foreground mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <Phone size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <a href="tel:+8615397615812" className="text-sm text-muted-foreground hover:text-amber transition-colors">
+            <div className="space-y-2 text-sm">
+              <div className="flex items-start gap-2">
+                <span className="font-medium text-foreground whitespace-nowrap">Phone:</span>
+                <a href="tel:+8615397615812" className="text-muted-foreground hover:text-amber transition-colors break-all">
                   +86 153 9761 5812
                 </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <a href="mailto:chinadetective8848@gmail.com" className="text-sm text-muted-foreground hover:text-amber transition-colors">
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-medium text-foreground whitespace-nowrap">E-mail:</span>
+                <a href="mailto:chinadetective8848@gmail.com" className="text-muted-foreground hover:text-amber transition-colors break-all">
                   chinadetective8848@gmail.com
                 </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">
-                  Shanghai, Beijing, Guangzhou, Shenzhen
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-medium text-foreground whitespace-nowrap">WhatsApp:</span>
+                <a href="https://wa.me/8615397615812" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-amber transition-colors">
+                  +86 153 9761 5812
+                </a>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-medium text-foreground whitespace-nowrap">WeChat:</span>
+                <span className="text-muted-foreground">+86 153 9761 5812</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-medium text-foreground whitespace-nowrap">Telegram:</span>
+                <a href="https://t.me/chinadetective8848_bot" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-amber transition-colors break-all">
+                  https://t.me/chinadetective8848_bot
+                </a>
+              </div>
+              <div className="pt-2 border-t border-border mt-3">
+                <span className="text-muted-foreground text-xs">
+                  Shanghai, Beijing, Guangzhou, Shenzhen, ChengDu
                 </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MessageCircle size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <a href="https://wa.me/8615397615812" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-amber transition-colors">
-                  WhatsApp
-                </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <MessageCircle size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">WeChat: ChinaDetective</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Send size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <a href="https://t.me/chinadetective8848_bot" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-amber transition-colors">
-                  Telegram
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 
