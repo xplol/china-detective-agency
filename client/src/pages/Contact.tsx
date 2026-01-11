@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Mail, Phone, MapPin, Clock, MessageSquare } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageSquare, MessageCircle, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -262,20 +262,43 @@ export default function Contact() {
               {/* WeChat/WhatsApp Info */}
               <Card className="bg-amber/10 border-amber/30">
                 <CardContent className="p-6">
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     <h3 className="text-display text-lg font-bold text-foreground">
                       Instant Messaging
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      For faster communication, you can also reach us via:
+                      For faster communication, reach us directly via:
                     </p>
-                    <div className="space-y-2">
-                      <p className="text-sm text-foreground">
-                        <span className="font-medium">WeChat:</span> ChinaDetective
-                      </p>
-                      <p className="text-sm text-foreground">
-                        <span className="font-medium">WhatsApp:</span> +86 153 9761 5812
-                      </p>
+                    <div className="space-y-3">
+                      {/* WhatsApp */}
+                      <a
+                        href="https://wa.me/8615397615812"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 p-3 bg-background rounded-sm border border-border hover:border-amber/50 transition-colors"
+                      >
+                        <div className="w-10 h-10 bg-green-500/20 rounded-sm flex items-center justify-center flex-shrink-0">
+                          <MessageCircle className="text-green-500" size={20} />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium text-foreground">WhatsApp</p>
+                          <p className="text-xs text-muted-foreground">+86 153 9761 5812</p>
+                        </div>
+                        <ArrowRight size={16} className="text-amber flex-shrink-0" />
+                      </a>
+
+                      {/* WeChat */}
+                      <div className="p-3 bg-background rounded-sm border border-border">
+                        <p className="text-sm font-medium text-foreground mb-2">WeChat</p>
+                        <p className="text-xs text-muted-foreground mb-3">Scan QR code or search: <span className="font-medium text-foreground">ChinaDetective</span></p>
+                        <div className="flex justify-center">
+                          <img
+                            src="/images/wechat-qr-code.jpg"
+                            alt="WeChat QR Code for ChinaDetective"
+                            className="w-32 h-32 rounded-sm object-cover"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
