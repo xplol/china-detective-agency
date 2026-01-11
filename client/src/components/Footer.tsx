@@ -106,11 +106,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">+86 138 0000 0000</span>
+                <span className="text-sm text-muted-foreground">+86 153 9761 5812</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={18} className="text-amber mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">contact@chinadetective.com</span>
+                <span className="text-sm text-muted-foreground">chinadetective8848@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-amber mt-0.5 flex-shrink-0" />
