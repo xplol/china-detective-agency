@@ -1,4 +1,18 @@
+# Robots.txt for www.spy007.top
+# Professional Private Investigation Services in China
+
+# Allow all search engines to crawl the entire site
 User-agent: *
 Allow: /
 
+# Disallow backup and temporary files
+Disallow: /*.backup$
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*~
+
+# Sitemap location
 Sitemap: https://www.spy007.top/sitemap.xml
+
+# Website: https://www.spy007.top
+# Last updated: 2026-01-12
