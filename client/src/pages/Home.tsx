@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import {
   Shield,
   Search,
@@ -91,6 +92,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <SEO
+        title="China Private Investigator | Professional Detective Agency"
+        description="Professional private investigation services in China for international clients. Specializing in relationship investigations, background checks, business due diligence, and corporate investigations."
+        keywords="private investigator China, China detective agency, background check China, relationship investigation China, business investigation China, corporate investigation China"
+      />
       <Navigation />
 
       {/* Hero Section - Cinematic with venetian blind effect */}

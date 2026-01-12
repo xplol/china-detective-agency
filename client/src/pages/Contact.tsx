@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Mail, Phone, MapPin, Clock, MessageSquare, MessageCircle, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -76,6 +77,11 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <SEO
+        title="Contact Us | China Private Investigator & Detective Agency"
+        description="Contact our professional private investigation agency in China. Free consultation available 24/7. We provide confidential investigation services for international clients across China."
+        keywords="contact China detective, private investigator contact, investigation consultation, China detective agency contact"
+      />
       <Navigation />
 
       {/* Hero Section */}

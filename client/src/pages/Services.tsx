@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import {
   Heart,
   FileCheck,
@@ -179,6 +180,11 @@ export default function Services() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <SEO
+        title="Investigation Services in China | Private Detective Agency"
+        description="Comprehensive private investigation services in China: relationship investigation, background checks, business investigation, corporate due diligence, asset investigation, and more."
+        keywords="investigation services China, private detective China, relationship investigation, background check, business investigation, corporate due diligence, asset investigation"
+      />
       <Navigation />
 
       {/* Hero Section */}

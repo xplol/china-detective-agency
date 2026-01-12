@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import {
   Target,
   Award,
@@ -18,6 +19,7 @@ import {
 } from "lucide-react";
 
 export default function About() {
+  // SEO content will be added after return statement
   const values = [
     {
       icon: Shield,
@@ -77,6 +79,11 @@ export default function About() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <SEO
+        title="About Us | China Private Investigator & Detective Agency"
+        description="Professional private investigation agency in China with 20+ years of experience. Our team of licensed investigators provides confidential, accurate, and efficient investigation services for international clients."
+        keywords="about China detective agency, private investigator team, professional investigation services, licensed investigators China"
+      />
       <Navigation />
 
       {/* Hero Section */}

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";
+import SEO from "@/components/SEO";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
@@ -11,7 +12,13 @@ export default function NotFound() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
+    <>
+      <SEO
+        title="404 - Page Not Found | China Detective Agency"
+        description="The page you are looking for could not be found. Return to our homepage to explore our professional private investigation services in China."
+        keywords="404, page not found, China detective agency"
+      />
+      <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
       <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
         <CardContent className="pt-8 pb-8 text-center">
           <div className="flex justify-center mb-6">
@@ -44,6 +51,7 @@ export default function NotFound() {
           </div>
         </CardContent>
       </Card>
-    </div>
+      </div>
+    </>
   );
 }
