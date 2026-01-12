@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import { Mail, Phone, MapPin, Clock, MessageSquare, MessageCircle, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { submitContactMessage } from "@/lib/supabase";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -21,11 +22,33 @@ export default function Contact() {
     service: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! We'll contact you within 24 hours.");
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const result = await submitContactMessage({
+        full_name: formData.name,
+        email: formData.email,
+        phone_number: formData.phone,
+        service_interested_in: formData.service,
+        message: formData.message,
+      });
+
+      if (result.success) {
+        toast.success("Message sent! We'll contact you within 24 hours.");
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+      } else {
+        toast.error(result.error || "Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -186,9 +209,10 @@ export default function Contact() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-amber text-background hover:bg-amber/90 font-medium"
+                      disabled={isSubmitting}
+                      className="w-full bg-amber text-background hover:bg-amber/90 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Send Message
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
 
                     <p className="text-xs text-muted-foreground text-center">
