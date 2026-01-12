@@ -10,7 +10,7 @@ interface SEOProps {
 
 const SITE_URL = "https://www.spy007.top";
 const DEFAULT_TITLE = "China Private Investigator | Professional Detective Agency";
-const DEFAULT_DESCRIPTION = "Professional private investigation services in China for international clients. Specializing in relationship investigations, background checks, business due diligence, and corporate investigations.";
+const DEFAULT_DESCRIPTION = "Professional private investigation services in China. Specializing in relationship investigations, background checks, and corporate due diligence for international clients.";
 const DEFAULT_KEYWORDS = "private investigator China, China detective agency, background check China, relationship investigation China, business investigation China, corporate investigation China";
 
 export default function SEO({
@@ -57,7 +57,7 @@ export default function SEO({
 
       {/* Additional SEO Tags */}
       <meta name="robots" content="index, follow" />
-      <meta name="language" content="English" />
+      <meta httpEquiv="content-language" content="en" />
       <meta name="revisit-after" content="7 days" />
       <meta name="author" content="China Detective Agency" />
     </Helmet>

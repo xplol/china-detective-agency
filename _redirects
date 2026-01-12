@@ -1,2 +1,9 @@
-# Redirect all routes to index.html for client-side routing
+# 301 Redirects - Domain Consolidation
+# Redirect non-www to www (primary domain)
+https://spy007.top/* https://www.spy007.top/:splat 301!
+
+# Redirect Cloudflare Pages domain to primary domain
+https://*.pages.dev/* https://www.spy007.top/:splat 301!
+
+# Client-side routing - must be last
 /*  /index.html  200
