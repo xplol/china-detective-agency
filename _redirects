@@ -1,9 +1,9 @@
 # 301 Redirects - Domain Consolidation
-# Redirect non-www to www (primary domain)
-https://spy007.top/* https://www.spy007.top/:splat 301!
+# Note: Domain-level redirects (non-www to www) are configured in Cloudflare Redirect Rules
+# _redirects file only handles path-based redirects within the same domain
 
-# Redirect Cloudflare Pages domain to primary domain
-https://*.pages.dev/* https://www.spy007.top/:splat 301!
+# Redirect Cloudflare Pages domain to primary domain (handled by Cloudflare)
+# https://*.pages.dev/* https://www.spy007.top/:splat 301!
 
 # Client-side routing - must be last
 /*  /index.html  200
