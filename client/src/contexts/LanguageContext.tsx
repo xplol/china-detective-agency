@@ -445,6 +445,7 @@ i18n
     resources,
     lng: getBrowserLanguage(), // Auto-detect browser language
     fallbackLng: 'en',
+    returnObjects: true, // Enable returning arrays and objects
     interpolation: {
       escapeValue: false
     }
@@ -453,7 +454,7 @@ i18n
 interface LanguageContextType {
   language: string;
   setLanguage: (lang: string) => void;
-  t: (key: string) => string;
+  t: (key: string) => any; // Changed from string to any to support arrays
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
