@@ -1,5 +1,6 @@
 # Robots.txt for www.spy007.top
 # Professional Private Investigation Services in China
+# Bilingual Site (Chinese & English)
 
 # Allow all search engines to crawl the entire site
 User-agent: *
@@ -14,5 +15,12 @@ Disallow: /*~
 # Sitemap location
 Sitemap: https://www.spy007.top/sitemap.xml
 
+# Related site (English-focused)
+# Sitemap: https://www.xplol.cn/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
 # Website: https://www.spy007.top
-# Last updated: 2026-01-12
+# Partner site: https://www.xplol.cn
+# Last updated: 2026-01-29

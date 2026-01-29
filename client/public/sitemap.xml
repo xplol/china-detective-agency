@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -7,95 +8,115 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.spy007.top/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <!-- Multilingual alternate versions -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spy007.top/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.spy007.top/" />
+    <!-- Cross-reference to English-focused site -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.xplol.cn/" />
   </url>
   
   <!-- Main Pages -->
   <url>
     <loc>https://www.spy007.top/services</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spy007.top/services" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.spy007.top/services" />
   </url>
   
   <url>
     <loc>https://www.spy007.top/about</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spy007.top/about" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.spy007.top/about" />
   </url>
   
   <url>
     <loc>https://www.spy007.top/contact</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spy007.top/contact" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.spy007.top/contact" />
   </url>
   
   <!-- Individual Service Pages (Anchor Links) -->
   <url>
     <loc>https://www.spy007.top/services#relationship-investigation</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#background-check</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#business-investigation</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#corporate-due-diligence</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#asset-investigation</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#locate-missing-persons</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#debt-collection</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#fraud-investigation</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.spy007.top/services#employee-investigation</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  
+  <!-- Cross-site reference: Partner English site -->
+  <!-- This helps search engines understand the relationship between the two sites -->
+  <url>
+    <loc>https://www.xplol.cn/</loc>
+    <lastmod>2026-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   
 </urlset>
