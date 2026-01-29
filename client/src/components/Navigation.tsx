@@ -3,20 +3,26 @@
  */
 
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [location] = useLocation();
+  const { language, setLanguage, t } = useLanguage();
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/about", label: "About Us" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: t("nav.home") },
+    { href: "/services", label: t("nav.services") },
+    { href: "/about", label: t("nav.about") },
+    { href: "/contact", label: t("nav.contact") },
   ];
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'zh' : 'en');
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -54,18 +60,17 @@ export default function Navigation() {
                 </span>
               </Link>
             ))}
-            <a
-              href="https://t.me/chinadetective8848_bot"
-              target="_blank"
-              rel="noopener noreferrer"
+            
+            {/* Language Switcher Button */}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={toggleLanguage}
+              className="border-amber/30 text-foreground hover:bg-amber/10 hover:text-amber hover:border-amber transition-all duration-300"
             >
-              <Button
-                variant="default"
-                className="bg-amber text-background hover:bg-amber/90 font-medium"
-              >
-                Free Consultation
-              </Button>
-            </a>
+              <Globe className="w-4 h-4 mr-2" />
+              {language === 'en' ? '中文' : 'English'}
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,19 +101,17 @@ export default function Navigation() {
                   </span>
                 </Link>
               ))}
-              <a
-                href="https://t.me/chinadetective8848_bot"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full"
+              
+              {/* Mobile Language Switcher */}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={toggleLanguage}
+                className="border-amber/30 text-foreground hover:bg-amber/10 hover:text-amber hover:border-amber transition-all duration-300 w-full"
               >
-                <Button
-                  variant="default"
-                  className="bg-amber text-background hover:bg-amber/90 font-medium w-full"
-                >
-                  Free Consultation
-                </Button>
-              </a>
+                <Globe className="w-4 h-4 mr-2" />
+                {language === 'en' ? '中文' : 'English'}
+              </Button>
             </div>
           </div>
         )}
