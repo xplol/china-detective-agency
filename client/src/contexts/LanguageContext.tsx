@@ -140,6 +140,9 @@ const resources = {
       ],
       
       "services.cta": "View All Services",
+      "services.custom.title": "Need a Custom Investigation?",
+      "services.custom.desc": "Every case is unique. Contact us to discuss your specific investigation needs and receive a customized solution.",
+      "services.custom.button": "Free Consultation",
       
       // Why Choose Us
       "why.badge": "Why Choose Us",
@@ -157,6 +160,31 @@ const resources = {
       
       "why.legal.title": "Legal Compliance",
       "why.legal.desc": "All investigations conducted within Chinese legal framework with admissible evidence.",
+      
+      // About Page - Expertise
+      "about.expertise.badge": "OUR EXPERTISE",
+      "about.expertise.title": "Why International Clients Choose Us",
+      "about.expertise.local.title": "Local Expertise",
+      "about.expertise.local.desc": "Deep understanding of Chinese business culture, legal system, and social dynamics. Our investigators are native speakers with extensive local networks.",
+      "about.expertise.standards.title": "International Standards",
+      "about.expertise.standards.desc": "We follow international investigation standards and best practices, ensuring our services meet the expectations of global clients.",
+      "about.expertise.compliance.title": "Legal Compliance",
+      "about.expertise.compliance.desc": "All investigations are conducted within the framework of Chinese law. Evidence collected is admissible in legal proceedings.",
+      "about.expertise.multilingual.title": "Multilingual Team",
+      "about.expertise.multilingual.desc": "Our team speaks English, Chinese (Mandarin and Cantonese), and other languages to serve international clients effectively.",
+      "about.coverage.title": "Nationwide Coverage in China",
+      
+      // Contact Page - FAQ
+      "contact.faq.badge": "COMMON QUESTIONS",
+      "contact.faq.title": "Before You Contact Us",
+      "contact.faq.q1.question": "How quickly can you start an investigation?",
+      "contact.faq.q1.answer": "We can typically begin investigations within 24-48 hours after the initial consultation and agreement. Emergency cases can be started immediately.",
+      "contact.faq.q2.question": "How much do your services cost?",
+      "contact.faq.q2.answer": "Costs vary depending on the complexity and scope of the investigation. We provide transparent pricing after understanding your specific needs during the free consultation.",
+      "contact.faq.q3.question": "Is my information kept confidential?",
+      "contact.faq.q3.answer": "Absolutely. We maintain the highest standards of confidentiality. All client information and investigation details are protected with strict privacy protocols and encrypted communications.",
+      "contact.faq.q4.question": "Do you work with clients outside of China?",
+      "contact.faq.q4.answer": "Yes, we specialize in serving international clients. We have experience working with clients from over 50 countries and provide services in multiple languages.",
       
       "why.cta": "Contact Us Today",
       
@@ -353,6 +381,9 @@ const resources = {
       ],
       
       "services.cta": "查看所有服务",
+      "services.custom.title": "需要定制调查服务？",
+      "services.custom.desc": "每个案件都是独特的。联系我们讨论您的具体调查需求，获得定制化解决方案。",
+      "services.custom.button": "免费咨询",
       
       // Why Choose Us
       "why.badge": "为什么选择我们",
@@ -370,6 +401,31 @@ const resources = {
       
       "why.legal.title": "法律合规",
       "why.legal.desc": "所有调查均在中国法律框架内进行，提供可接受的证据。",
+      
+      // About Page - Expertise
+      "about.expertise.badge": "我们的专业能力",
+      "about.expertise.title": "为什么国际客户选择我们",
+      "about.expertise.local.title": "本地专业知识",
+      "about.expertise.local.desc": "深入了解中国商业文化、法律体系和社会动态。我们的调查员是母语者，拥有广泛的本地网络。",
+      "about.expertise.standards.title": "国际标准",
+      "about.expertise.standards.desc": "我们遵循国际调查标准和最佳实践，确保我们的服务满足全球客户的期望。",
+      "about.expertise.compliance.title": "法律合规",
+      "about.expertise.compliance.desc": "所有调查均在中国法律框架内进行。收集的证据可在法律诉讼中使用。",
+      "about.expertise.multilingual.title": "多语言团队",
+      "about.expertise.multilingual.desc": "我们的团队会说英语、中文（普通话和粤语）以及其他语言，有效服务国际客户。",
+      "about.coverage.title": "中国全国覆盖",
+      
+      // Contact Page - FAQ
+      "contact.faq.badge": "常见问题",
+      "contact.faq.title": "联系我们之前",
+      "contact.faq.q1.question": "你们多快能开始调查？",
+      "contact.faq.q1.answer": "在初步咨询和达成协议后，我们通常可以在24-48小时内开始调查。紧急案件可以立即开始。",
+      "contact.faq.q2.question": "你们的服务费用是多少？",
+      "contact.faq.q2.answer": "费用因调查的复杂性和范围而异。在免费咨询期间了解您的具体需求后，我们会提供透明的定价。",
+      "contact.faq.q3.question": "我的信息会保密吗？",
+      "contact.faq.q3.answer": "绝对保密。我们保持最高标准的保密性。所有客户信息和调查细节都受到严格的隐私协议和加密通信的保护。",
+      "contact.faq.q4.question": "你们与中国以外的客户合作吗？",
+      "contact.faq.q4.answer": "是的，我们专门为国际客户服务。我们拥有与来自50多个国家的客户合作的经验，并提供多语言服务。",
       
       "why.cta": "立即联系我们",
       

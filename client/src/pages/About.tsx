@@ -51,24 +51,20 @@ export default function About() {
 
   const expertise = [
     {
-      title: "Local Expertise",
-      description:
-        "Deep understanding of Chinese business culture, legal system, and social dynamics. Our investigators are native speakers with extensive local networks.",
+      title: t("about.expertise.local.title"),
+      description: t("about.expertise.local.desc"),
     },
     {
-      title: "International Standards",
-      description:
-        "We follow international investigation standards and best practices, ensuring our services meet the expectations of global clients.",
+      title: t("about.expertise.standards.title"),
+      description: t("about.expertise.standards.desc"),
     },
     {
-      title: "Legal Compliance",
-      description:
-        "All investigations are conducted within the framework of Chinese law. Evidence collected is admissible in legal proceedings.",
+      title: t("about.expertise.compliance.title"),
+      description: t("about.expertise.compliance.desc"),
     },
     {
-      title: "Multilingual Team",
-      description:
-        "Our team speaks English, Chinese (Mandarin and Cantonese), and other languages to serve international clients effectively.",
+      title: t("about.expertise.multilingual.title"),
+      description: t("about.expertise.multilingual.desc"),
     },
   ];
 
@@ -215,10 +211,10 @@ export default function About() {
         <div className="container">
           <div className="text-center mb-16 space-y-4">
             <span className="text-mono text-xs text-amber uppercase tracking-widest">
-              Our Expertise
+              {t("about.expertise.badge")}
             </span>
             <h2 className="text-display text-4xl font-bold text-foreground">
-              Why International Clients Choose Us
+              {t("about.expertise.title")}
             </h2>
           </div>
 
@@ -251,7 +247,7 @@ export default function About() {
                 <Globe className="text-amber" size={32} />
               </div>
               <h2 className="text-display text-4xl font-bold text-foreground">
-                Nationwide Coverage in China
+                {t("about.coverage.title")}
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Our investigation network covers all major cities and provinces across China, including:

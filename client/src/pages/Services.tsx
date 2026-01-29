@@ -220,10 +220,10 @@ export default function Services() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-display text-4xl font-bold text-foreground">
-              Need a Custom Investigation?
+              {t("services.custom.title")}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Every case is unique. Contact us to discuss your specific investigation needs and receive a customized solution.
+              {t("services.custom.desc")}
             </p>
             <a
               href="https://t.me/chinadetective8848_bot"
@@ -234,7 +234,7 @@ export default function Services() {
                 size="lg"
                 className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
               >
-                Free Consultation
+                {t("services.custom.button")}
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </a>

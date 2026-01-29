@@ -347,10 +347,10 @@ export default function Contact() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12 space-y-4">
               <span className="text-mono text-xs text-amber uppercase tracking-widest">
-                Common Questions
+                {t("contact.faq.badge")}
               </span>
               <h2 className="text-display text-4xl font-bold text-foreground">
-                Before You Contact Us
+                {t("contact.faq.title")}
               </h2>
             </div>
 
@@ -358,10 +358,10 @@ export default function Contact() {
               <Card className="bg-background border-border">
                 <CardContent className="p-6">
                   <h3 className="text-display text-lg font-bold text-foreground mb-2">
-                    How quickly can you start an investigation?
+                    {t("contact.faq.q1.question")}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    We can typically begin investigations within 24-48 hours after the initial consultation and agreement. Emergency cases can be started immediately.
+                    {t("contact.faq.q1.answer")}
                   </p>
                 </CardContent>
               </Card>
@@ -369,10 +369,10 @@ export default function Contact() {
               <Card className="bg-background border-border">
                 <CardContent className="p-6">
                   <h3 className="text-display text-lg font-bold text-foreground mb-2">
-                    How much do your services cost?
+                    {t("contact.faq.q2.question")}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Costs vary depending on the complexity and scope of the investigation. We provide transparent pricing after understanding your specific needs during the free consultation.
+                    {t("contact.faq.q2.answer")}
                   </p>
                 </CardContent>
               </Card>
@@ -380,10 +380,10 @@ export default function Contact() {
               <Card className="bg-background border-border">
                 <CardContent className="p-6">
                   <h3 className="text-display text-lg font-bold text-foreground mb-2">
-                    Is my information kept confidential?
+                    {t("contact.faq.q3.question")}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Absolutely. We maintain the highest standards of confidentiality. All client information and investigation details are protected with strict privacy protocols and encrypted communications.
+                    {t("contact.faq.q3.answer")}
                   </p>
                 </CardContent>
               </Card>
@@ -391,10 +391,10 @@ export default function Contact() {
               <Card className="bg-background border-border">
                 <CardContent className="p-6">
                   <h3 className="text-display text-lg font-bold text-foreground mb-2">
-                    Do you work with clients outside of China?
+                    {t("contact.faq.q4.question")}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Yes, we specialize in serving international clients. We have experience working with clients from over 50 countries and provide services in multiple languages.
+                    {t("contact.faq.q4.answer")}
                   </p>
                 </CardContent>
               </Card>
