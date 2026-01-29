@@ -28,156 +28,75 @@ export default function Services() {
   const services = [
     {
       icon: Heart,
-      title: "Relationship Investigation",
+      title: t("services.relationship.title"),
       slug: "relationship-investigation",
-      description:
-        "Comprehensive relationship investigation services for international clients concerned about relationships in China. Our discreet investigators provide evidence-based reports on relationship verification, matrimonial background checks, and infidelity investigations.",
-      features: [
-        "Matrimonial background verification",
-        "Infidelity and cheating investigation",
-        "Pre-marital background checks",
-        "Relationship history verification",
-        "Dating scam investigation",
-        "Evidence collection and documentation",
-      ],
-      seoKeywords:
-        "relationship investigation China, infidelity investigation, matrimonial investigation, verify Chinese girlfriend, verify Chinese boyfriend, romance scam investigation China",
+      description: t("services.relationship.desc"),
+      features: t("services.relationship.features") as string[],
+      seoKeywords: t("services.relationship.keywords"),
     },
     {
       icon: FileCheck,
-      title: "Background Check Services",
+      title: t("services.background.title"),
       slug: "background-check",
-      description:
-        "Professional background check services in China for individuals and businesses. We verify employment history, education credentials, criminal records, and personal references to help you make informed decisions.",
-      features: [
-        "Employment history verification",
-        "Education credential checks",
-        "Criminal record searches",
-        "Personal reference verification",
-        "Identity verification",
-        "Social media investigation",
-      ],
-      seoKeywords:
-        "background check China, China background investigation, personal background check, employment verification China, criminal record check China, education verification",
+      description: t("services.background.desc"),
+      features: t("services.background.features") as string[],
+      seoKeywords: t("services.background.keywords"),
     },
     {
       icon: Building2,
-      title: "Business Investigation",
+      title: t("services.business.title"),
       slug: "business-investigation",
-      description:
-        "Protect your business interests with comprehensive business investigation services in China. We conduct supplier verification, business partner background checks, and commercial fraud investigations.",
-      features: [
-        "Supplier verification and factory audits",
-        "Business partner background checks",
-        "Commercial fraud investigation",
-        "Competitor intelligence",
-        "Market research and analysis",
-        "Trade secret protection",
-      ],
-      seoKeywords:
-        "business investigation China, supplier verification China, factory audit, business partner background check, commercial investigation, fraud investigation China",
+      description: t("services.business.desc"),
+      features: t("services.business.features") as string[],
+      seoKeywords: t("services.business.keywords"),
     },
     {
       icon: Search,
-      title: "Corporate Due Diligence",
+      title: t("services.corporate.title"),
       slug: "corporate-due-diligence",
-      description:
-        "In-depth corporate due diligence services for companies operating in or entering the Chinese market. We provide comprehensive reports on financial status, legal compliance, and business reputation.",
-      features: [
-        "Financial verification and analysis",
-        "Legal compliance checks",
-        "Corporate structure investigation",
-        "Reputation and market standing",
-        "Litigation and dispute history",
-        "Management background checks",
-      ],
-      seoKeywords:
-        "corporate due diligence China, company verification China, business due diligence, corporate investigation, financial investigation China, legal compliance check",
+      description: t("services.corporate.desc"),
+      features: t("services.corporate.features") as string[],
+      seoKeywords: t("services.corporate.keywords"),
     },
     {
       icon: Shield,
-      title: "Asset Investigation",
+      title: t("services.asset.title"),
       slug: "asset-investigation",
-      description:
-        "Locate and verify assets in China including property, bank accounts, and business holdings. Essential for legal proceedings, divorce cases, and financial disputes.",
-      features: [
-        "Property and real estate searches",
-        "Bank account investigation",
-        "Business asset verification",
-        "Hidden asset discovery",
-        "Asset valuation assistance",
-        "Legal evidence collection",
-      ],
-      seoKeywords:
-        "asset investigation China, asset search China, property investigation, financial investigation, hidden asset discovery, divorce asset investigation",
+      description: t("services.asset.desc"),
+      features: t("services.asset.features") as string[],
+      seoKeywords: t("services.asset.keywords"),
     },
     {
       icon: Users,
-      title: "Locate Missing Persons",
+      title: t("services.missing.title"),
       slug: "locate-missing-persons",
-      description:
-        "Professional people search services to locate missing persons, lost contacts, or family members in China. We use advanced investigation techniques to find individuals discreetly and efficiently.",
-      features: [
-        "Missing person investigation",
-        "Lost contact location services",
-        "Family member searches",
-        "Skip tracing services",
-        "Witness location for legal cases",
-        "Adoption and birth parent searches",
-      ],
-      seoKeywords:
-        "find person China, locate missing person China, people search China, skip tracing China, find family member China, missing person investigation",
+      description: t("services.missing.desc"),
+      features: t("services.missing.features") as string[],
+      seoKeywords: t("services.missing.keywords"),
     },
     {
       icon: DollarSign,
-      title: "Debt Collection Investigation",
+      title: t("services.debt.title"),
       slug: "debt-collection",
-      description:
-        "Support debt collection efforts with professional investigation services. We locate debtors, verify assets, and provide evidence for legal proceedings in China.",
-      features: [
-        "Debtor location services",
-        "Asset verification for collection",
-        "Employment and income verification",
-        "Evidence collection for legal action",
-        "Skip tracing for absconded debtors",
-        "Fraud investigation",
-      ],
-      seoKeywords:
-        "debt collection investigation China, locate debtor China, asset verification, skip tracing China, debt recovery investigation, fraud investigation",
+      description: t("services.debt.desc"),
+      features: t("services.debt.features") as string[],
+      seoKeywords: t("services.debt.keywords"),
     },
     {
       icon: AlertTriangle,
-      title: "Fraud Investigation",
+      title: t("services.fraud.title"),
       slug: "fraud-investigation",
-      description:
-        "Comprehensive fraud investigation services for victims of scams and fraudulent schemes in China. We investigate romance scams, investment fraud, and business fraud.",
-      features: [
-        "Romance and dating scam investigation",
-        "Investment fraud investigation",
-        "Business and trade fraud",
-        "Identity theft investigation",
-        "Online scam investigation",
-        "Evidence collection for prosecution",
-      ],
-      seoKeywords:
-        "fraud investigation China, romance scam investigation, investment fraud China, business fraud investigation, scam investigation China, identity theft investigation",
+      description: t("services.fraud.desc"),
+      features: t("services.fraud.features") as string[],
+      seoKeywords: t("services.fraud.keywords"),
     },
     {
       icon: Briefcase,
-      title: "Employee Investigation",
+      title: t("services.employee.title"),
       slug: "employee-investigation",
-      description:
-        "Pre-employment screening and employee investigation services for companies hiring in China. Verify credentials, conduct background checks, and investigate employee misconduct.",
-      features: [
-        "Pre-employment background screening",
-        "Employee misconduct investigation",
-        "Theft and fraud investigation",
-        "Workplace harassment investigation",
-        "Competitor solicitation investigation",
-        "Intellectual property theft",
-      ],
-      seoKeywords:
-        "employee investigation China, pre-employment screening China, background check employees, workplace investigation, employee misconduct investigation, theft investigation",
+      description: t("services.employee.desc"),
+      features: t("services.employee.features") as string[],
+      seoKeywords: t("services.employee.keywords"),
     },
   ];
 
