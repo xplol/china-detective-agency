@@ -138,6 +138,17 @@ export default function Footer() {
                   Shanghai, Beijing, Guangzhou, Shenzhen, ChengDu
                 </span>
               </div>
+              <div className="pt-3 mt-3 border-t border-border">
+                <a 
+                  href="https://www.xplol.cn/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-amber transition-colors flex items-center gap-2"
+                >
+                  <span>🌐</span>
+                  <span>Visit Our English Site: xplol.cn</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
