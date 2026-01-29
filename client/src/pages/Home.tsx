@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { useLanguage } from "@/contexts/LanguageContext";
 import {
   Shield,
   Search,
@@ -22,71 +23,67 @@ import {
 } from "lucide-react";
 
 export default function Home() {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: Heart,
-      title: "Relationship Investigation",
-      description:
-        "Discreet investigation services for relationship verification, matrimonial background checks, and infidelity investigations. We help international clients verify relationships in China.",
-      keywords: "infidelity investigation, matrimonial investigation, relationship verification",
+      title: t("services.relationship.title"),
+      description: t("services.relationship.desc"),
+      keywords: t("services.relationship.keywords"),
     },
     {
       icon: FileCheck,
-      title: "Background Check",
-      description:
-        "Comprehensive background checks on individuals in China. Verify employment history, education credentials, criminal records, and personal references for peace of mind.",
-      keywords: "background check China, personal background investigation, credential verification",
+      title: t("services.background.title"),
+      description: t("services.background.desc"),
+      keywords: t("services.background.keywords"),
     },
     {
       icon: Building2,
-      title: "Business Investigation",
-      description:
-        "Corporate due diligence, supplier verification, and business partner background checks. Protect your business interests with thorough investigations in China.",
-      keywords: "business investigation, corporate due diligence, supplier verification China",
+      title: t("services.business.title"),
+      description: t("services.business.desc"),
+      keywords: t("services.business.keywords"),
     },
     {
       icon: Search,
-      title: "Corporate Due Diligence",
-      description:
-        "In-depth corporate investigations including financial verification, legal compliance checks, and reputation analysis for companies operating in China.",
-      keywords: "corporate investigation China, due diligence services, company verification",
+      title: t("services.corporate.title"),
+      description: t("services.corporate.desc"),
+      keywords: t("services.corporate.keywords"),
     },
     {
       icon: Shield,
-      title: "Asset Investigation",
-      description:
-        "Locate and verify assets in China including property, bank accounts, and business holdings. Essential for legal proceedings and financial disputes.",
-      keywords: "asset search China, asset investigation, financial investigation",
+      title: t("services.asset.title"),
+      description: t("services.asset.desc"),
+      keywords: t("services.asset.keywords"),
     },
     {
       icon: Users,
-      title: "Locate Missing Persons",
-      description:
-        "Professional people search services to locate missing persons, lost contacts, or family members in China. Discreet and effective.",
-      keywords: "find person China, locate missing person, people search services",
+      title: t("services.missing.title"),
+      description: t("services.missing.desc"),
+      keywords: t("services.missing.keywords"),
     },
   ];
 
   const whyChooseUs = [
     {
       icon: CheckCircle2,
-      title: "20+ Years Experience",
-      description: "Over two decades serving international clients with complex investigations in China.",
+      title: t("why.experience.title"),
+      description: t("why.experience.desc"),
     },
     {
       icon: Lock,
-      title: "Absolute Confidentiality",
-      description: "Strict privacy protocols and encrypted communications protect your sensitive information.",
+      title: t("why.confidential.title"),
+      description: t("why.confidential.desc"),
     },
     {
       icon: Clock,
-      title: "Fast Results",
-      description: "Efficient investigation processes deliver actionable results within agreed timeframes.",
+      title: t("why.fast.title"),
+      description: t("why.fast.desc"),
     },
     {
       icon: Shield,
-      title: "Legal Compliance",
-      description: "All investigations conducted within Chinese legal framework with admissible evidence.",
+      title: t("why.legal.title"),
+      description: t("why.legal.desc"),
     },
   ];
 
@@ -119,15 +116,15 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="inline-block">
                   <span className="text-mono text-xs text-amber uppercase tracking-widest border border-amber/30 px-4 py-2 rounded-sm">
-                    Professional Investigation Services
+                    {t("hero.badge")}
                   </span>
                 </div>
                 <h1 className="text-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                  Uncover the Truth in{" "}
-                  <span className="text-amber">China</span>
+                  {t("hero.title")}{" "}
+                  <span className="text-amber">{t("hero.title.highlight")}</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-                  Professional private investigation services for international clients. Specializing in relationship investigations, background checks, and corporate due diligence across China.
+                  {t("hero.description")}
                 </p>
               </div>
 
@@ -141,7 +138,7 @@ export default function Home() {
                     size="lg"
                     className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
                   >
-                    Free Consultation
+                    {t("hero.cta")}
                     <ArrowRight className="ml-2" size={20} />
                   </Button>
                 </a>
@@ -150,28 +147,28 @@ export default function Home() {
                   variant="outline"
                   className="border-amber text-amber hover:bg-amber/10 font-medium text-base px-8 py-6"
                 >
-                  View Services
+                  {t("hero.cta.secondary")}
                 </Button>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8">
                 <div className="space-y-1">
-                  <div className="text-display text-3xl font-bold text-amber">20+</div>
+                  <div className="text-display text-3xl font-bold text-amber">{t("hero.stats.experience")}</div>
                   <div className="text-mono text-xs text-muted-foreground uppercase tracking-wider">
-                    Years Experience
+                    {t("hero.stats.experience.label")}
                   </div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-display text-3xl font-bold text-amber">2000+</div>
+                  <div className="text-display text-3xl font-bold text-amber">{t("hero.stats.cases")}</div>
                   <div className="text-mono text-xs text-muted-foreground uppercase tracking-wider">
-                    Cases Solved
+                    {t("hero.stats.cases.label")}
                   </div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-display text-3xl font-bold text-amber">95%</div>
+                  <div className="text-display text-3xl font-bold text-amber">{t("hero.stats.success")}</div>
                   <div className="text-mono text-xs text-muted-foreground uppercase tracking-wider">
-                    Success Rate
+                    {t("hero.stats.success.label")}
                   </div>
                 </div>
               </div>
@@ -197,13 +194,13 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-16 space-y-4">
             <span className="text-mono text-xs text-amber uppercase tracking-widest">
-              Our Expertise
+              {t("services.badge")}
             </span>
             <h2 className="text-display text-4xl md:text-5xl font-bold text-foreground">
-              Investigation Services
+              {t("services.title")}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive private investigation services tailored for international clients operating in China.
+              {t("services.subtitle")}
             </p>
           </div>
 
@@ -242,7 +239,7 @@ export default function Home() {
               variant="outline"
               className="border-amber text-amber hover:bg-amber/10 font-medium"
             >
-              View All Services
+              {t("services.cta")}
               <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
@@ -276,13 +273,13 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <span className="text-mono text-xs text-amber uppercase tracking-widest">
-                  Why Choose Us
+                  {t("why.badge")}
                 </span>
                 <h2 className="text-display text-4xl md:text-5xl font-bold text-foreground">
-                  Trusted by International Clients
+                  {t("why.title")}
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  We understand the unique challenges international clients face when conducting investigations in China. Our team combines local expertise with international standards.
+                  {t("why.description")}
                 </p>
               </div>
 
@@ -309,7 +306,7 @@ export default function Home() {
                 size="lg"
                 className="bg-amber text-background hover:bg-amber/90 font-medium"
               >
-                Learn More About Us
+                {t("why.cta")}
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </div>
@@ -322,10 +319,10 @@ export default function Home() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-display text-4xl md:text-5xl font-bold text-foreground">
-              Ready to Start Your Investigation?
+              {t("cta.title")}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Contact us today for a free, confidential consultation. Our experienced investigators are ready to help you uncover the truth.
+              {t("cta.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -337,7 +334,7 @@ export default function Home() {
                   size="lg"
                   className="bg-amber text-background hover:bg-amber/90 font-medium text-base px-8 py-6"
                 >
-                  Free Consultation
+                  {t("cta.button")}
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </a>
@@ -346,7 +343,7 @@ export default function Home() {
                 variant="outline"
                 className="border-amber text-amber hover:bg-amber/10 font-medium text-base px-8 py-6"
               >
-                Contact Us
+                {t("nav.contact")}
               </Button>
             </div>
           </div>
