@@ -145,8 +145,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-amber transition-colors flex items-center gap-2"
                 >
-                  <span>🌐</span>
-                  <span>Visit Our English Site: xplol.cn</span>
+                  <span>🔍</span>
+                  <span>{t("footer.partner_site")}: www.xplol.cn</span>
                 </a>
               </div>
             </div>

@@ -201,8 +201,9 @@ const resources = {
       "footer.terms": "Terms of Service",
       "footer.disclaimer": "Disclaimer",
       
-      "footer.copyright": "© 2024 Truth Detective Agency. All rights reserved.",
-      "footer.license": "Business License: 京ICP备XXXXXXXX号",
+      "footer.copyright": "© 2024 China Detective Agency. All rights reserved.",
+      "footer.license": "Business License: XXXXXXXX",
+      "footer.partner_site": "Recommended Detective Service",
       
       // Common
       "common.learn_more": "Learn More",
@@ -415,6 +416,7 @@ const resources = {
       
       "footer.copyright": "© 2024 真相侦探社。保留所有权利。",
       "footer.license": "营业执照：京ICP备XXXXXXXX号",
+      "footer.partner_site": "我们推荐",
       
       // Common
       "common.learn_more": "了解更多",
