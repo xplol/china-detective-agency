@@ -124,6 +124,11 @@ const resources = {
       "common.learn_more": "Learn More",
       "common.contact_us": "Contact Us",
       "common.read_more": "Read More",
+      "common.what_we_offer": "What We Offer",
+      "common.request_service": "Request This Service",
+      "common.get_started": "Get Started",
+      "common.our_approach": "Our Approach",
+      "common.why_choose": "Why Choose Us",
     }
   },
   zh: {
@@ -247,6 +252,11 @@ const resources = {
       "common.learn_more": "了解更多",
       "common.contact_us": "联系我们",
       "common.read_more": "阅读更多",
+      "common.what_we_offer": "我们提供的服务",
+      "common.request_service": "申请此服务",
+      "common.get_started": "开始行动",
+      "common.our_approach": "我们的方法",
+      "common.why_choose": "为什么选择我们",
     }
   }
 };

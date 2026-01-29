@@ -10,12 +10,15 @@ import { Textarea } from "@/components/ui/textarea";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Mail, Phone, MapPin, Clock, MessageSquare, MessageCircle, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { submitContactMessage } from "@/lib/supabase";
 
 export default function Contact() {
+  const { t } = useLanguage();
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -99,13 +102,13 @@ export default function Contact() {
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <span className="text-mono text-xs text-amber uppercase tracking-widest">
-              Get In Touch
+              {t("common.get_started")}
             </span>
             <h1 className="text-display text-5xl md:text-6xl font-bold text-foreground">
-              Contact Us
+              {t("nav.contact")}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Start your investigation with a free, confidential consultation. Our team is ready to help you 24/7.
+              {t("cta.description")}
             </p>
           </div>
         </div>
@@ -121,10 +124,10 @@ export default function Contact() {
                 <div className="space-y-6">
                   <div className="space-y-2">
                     <h2 className="text-display text-3xl font-bold text-foreground">
-                      Send Us a Message
+                      {t("common.contact_us")}
                     </h2>
                     <p className="text-sm text-muted-foreground">
-                      Fill out the form below and we'll get back to you within 24 hours.
+                      {t("cta.description")}
                     </p>
                   </div>
 

@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { useLanguage } from "@/contexts/LanguageContext";
 import {
   Target,
   Award,
@@ -19,7 +20,8 @@ import {
 } from "lucide-react";
 
 export default function About() {
-  // SEO content will be added after return statement
+  const { t } = useLanguage();
+  
   const values = [
     {
       icon: Shield,
@@ -101,13 +103,13 @@ export default function About() {
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <span className="text-mono text-xs text-amber uppercase tracking-widest">
-              About Our Agency
+              {t("nav.about")}
             </span>
             <h1 className="text-display text-5xl md:text-6xl font-bold text-foreground">
-              Trusted Investigation Experts in China
+              {t("why.title")}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              For over 20 years, we have been helping international clients uncover the truth in China with professional, discreet, and reliable investigation services.
+              {t("why.description")}
             </p>
           </div>
         </div>
@@ -139,10 +141,10 @@ export default function About() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <span className="text-mono text-xs text-amber uppercase tracking-widest">
-                  Our Mission
+                  {t("common.our_approach")}
                 </span>
                 <h2 className="text-display text-4xl font-bold text-foreground">
-                  Empowering International Clients with Truth
+                  {t("why.title")}
                 </h2>
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -175,7 +177,7 @@ export default function About() {
         <div className="container">
           <div className="text-center mb-16 space-y-4">
             <span className="text-mono text-xs text-amber uppercase tracking-widest">
-              Our Core Values
+              {t("common.why_choose")}
             </span>
             <h2 className="text-display text-4xl font-bold text-foreground">
               What Drives Us

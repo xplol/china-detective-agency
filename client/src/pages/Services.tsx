@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { useLanguage } from "@/contexts/LanguageContext";
 import {
   Heart,
   FileCheck,
@@ -22,6 +23,8 @@ import {
 } from "lucide-react";
 
 export default function Services() {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: Heart,
@@ -202,13 +205,13 @@ export default function Services() {
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <span className="text-mono text-xs text-amber uppercase tracking-widest">
-              Professional Investigation Services
+              {t("hero.badge")}
             </span>
             <h1 className="text-display text-5xl md:text-6xl font-bold text-foreground">
-              Our Services
+              {t("services.title")}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Comprehensive private investigation services in China for international clients. Discreet, professional, and results-driven.
+              {t("services.subtitle")}
             </p>
           </div>
         </div>
@@ -247,7 +250,7 @@ export default function Services() {
                       <div className="lg:col-span-2 space-y-6">
                         <div>
                           <h3 className="text-display text-lg font-bold text-foreground mb-4">
-                            What We Offer
+                            {t("common.what_we_offer")}
                           </h3>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                             {service.features.map((feature, idx) => (
@@ -269,7 +272,7 @@ export default function Services() {
                             size="lg"
                             className="bg-amber text-background hover:bg-amber/90 font-medium"
                           >
-                            Request This Service
+                            {t("common.request_service")}
                             <ArrowRight className="ml-2" size={20} />
                           </Button>
                           <Button
@@ -277,7 +280,7 @@ export default function Services() {
                             variant="outline"
                             className="border-border text-foreground hover:bg-muted"
                           >
-                            Learn More
+                            {t("common.learn_more")}
                           </Button>
                         </div>
 
