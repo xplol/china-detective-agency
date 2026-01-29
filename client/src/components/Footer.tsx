@@ -2,11 +2,12 @@
  * Professional footer with contact information and links
  */
 
-import { Mail, Phone, MapPin, MessageCircle, Send } from "lucide-react";
 import { Link } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-card border-t border-border">
@@ -28,39 +29,39 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Professional private investigation services in China for international clients. Discreet, reliable, and results-driven.
+              {t("footer.brand.desc")}
             </p>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-display text-lg font-bold text-foreground mb-4">Services</h3>
+            <h3 className="text-display text-lg font-bold text-foreground mb-4">{t("footer.services.title")}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/services">
                   <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                    Relationship Investigation
+                    {t("services.relationship.title")}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
                   <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                    Background Check
+                    {t("services.background.title")}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
                   <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                    Business Investigation
+                    {t("services.business.title")}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
                   <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                    Corporate Due Diligence
+                    {t("services.corporate.title")}
                   </span>
                 </Link>
               </li>
@@ -69,32 +70,32 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-display text-lg font-bold text-foreground mb-4">Quick Links</h3>
+            <h3 className="text-display text-lg font-bold text-foreground mb-4">{t("footer.quick")}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/">
                   <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                    Home
+                    {t("nav.home")}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
                   <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                    About Us
+                    {t("nav.about")}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
                   <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                    Contact
+                    {t("nav.contact")}
                   </span>
                 </Link>
               </li>
               <li>
                 <span className="text-sm text-muted-foreground hover:text-amber transition-colors cursor-pointer">
-                  Privacy Policy
+                  {t("footer.privacy")}
                 </span>
               </li>
             </ul>
@@ -102,7 +103,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-display text-lg font-bold text-foreground mb-4">Contact Us</h3>
+            <h3 className="text-display text-lg font-bold text-foreground mb-4">{t("common.contact_us")}</h3>
             <div className="space-y-2 text-sm">
               <div className="flex items-start gap-2">
                 <span className="font-medium text-foreground whitespace-nowrap">Phone:</span>
